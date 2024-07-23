@@ -3,7 +3,7 @@
     <head>
         <title>Explorer Tours - Things to Do, Tours & Attractions in Africa</title>
         <meta charset="utf-8"/>
-        <meta name=“viewport” content=“width=device-width, initial-scale=1”>
+        <meta name=“viewport” content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -11,15 +11,29 @@
             <nav>
                 <a href=""><img src="" alt=""></a>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tours.html">Tours</a></li>
-                    <li><a href="transfers.hmtl">Transfers</a></li>
-                    <li><a href="travelguide.html">Travel Guide</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <button onclick="document.location='tours.html'" class="dropDownButton">Tours</button>
+                        <div class="dropDown">
+                            <ul>
+                                <li><a href="johannesburgtours.html">Johannesburg Tours</a></li>
+                                <li><a href="sowetotours.html">Soweto Tours</a></li>
+                                <li><a href="pilanesbergtours.html">Pilanesberg Tours & Safaris</a></li>
+                                <li><a href="pretoriatours.html">Pretoria Tours</a></li>
+                                <li><a href="krugernationalpark.html">Kruger National Park Tours</a></li>
+                                <li><a href="capetowntours.html">Cape Town Tours</a></li>
+                                <li><a href="gardenroutetours.html">Garden Route Tours</a></li>
+                                <li><a href="durbantours.html">Durban Tours</a></li>
+                                <li><a href="southernafricantours.html">Southern African Tours</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><button onclick="document.location='transfers.html'">Transfers</button></li>
+                    <li><button onclick="document.location='travelguide.html'">Travel Guide</button></li>
+                    <li><button onclick="document.location='contact.html'">Contact</button></li>
                 </ul>
                 <form>
                     <input type="text" placeholder="Search..." required>
-                    <input type="submit" class="searchButton" value="">
+                    <input type="submit" class="searchButton" value="search_dark.svg">
                 </form>
             </nav>
         </header>
